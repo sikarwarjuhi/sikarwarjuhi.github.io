@@ -1,0 +1,519 @@
+---
+layout: blog
+title: index
+permalink: /
+---
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#page-top" id="i18_title"><span data-i18n="website.title">{{ site.title }}</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+                        <li><a class="page-scroll" href="#page-top"><span data-i18n="nav.home">{{ site.landing.home }}</span></a></li>
+                        <li><a class="page-scroll" href="#about_me"><span data-i18n="nav.about_me">{{ site.landing.about }}</span></a></li>
+                        <li><a class="page-scroll" href="#career"><span data-i18n="nav.career">{{ site.landing.career }}</span></a></li>
+                        <li><a class="page-scroll" href="#skills"><span data-i18n="nav.skills">{{ site.landing.skills }}</span></a></li>
+                        <li><a class="page-scroll" href="#project"><span data-i18n="nav.projects">{{ site.landing.projects }}</span></a></li>
+                        <li><a class="page-scroll" href="#contact"><span data-i18n="nav.contact">{{ site.landing.contact }}</span></a></li>
+                        <li><a class="page-scroll" href="/blog/"><span>Blog</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one" style="background-size: cover;"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two" style="background-size: cover;"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<section id="about_me" class="features">
+    <div class="container" id="i18_about_me">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="about_me.about_me">About Me</span></h1>
+                <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
+            </div>
+        </div>
+        <div class="row">
+            <!-- python -->
+            <div class="col-xs-2 wow fadeInLeft">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-python"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- linux -->
+            <div class="col-xs-2 wow fadeInLeft">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-shell"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- avatar -->
+            <div class="col-xs-4">
+                <div class="team-member wow zoomIn">
+                    <img src="{{ site.author.head_img | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                    <h4><span class="navy">{{ site.author.last_name }}</span> {{ site.author.first_name }}</h4>
+                    <ul class="list-inline social-icon">
+                        <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- html -->
+            <div class="col-xs-2 wow fadeInRight">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-angular"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- docker -->
+            <div class="col-xs-2 wow fadeInRight">
+                <div class="team-member">
+                    <div class="vote-icon">
+                        <i class="icon-docker"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><span data-i18n="about_me.des">
+                    I am a student in IITR, doing development in python and JS. Life is a continuous learning process, so I spend most of my time learning ,developing and being a Panda .
+                </span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="career" class="timeline features gray-section">
+    <div class="container" id="i18_career">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="career.my_career">My Career</span></h1>
+            </div>
+        </div>
+        <div class="row features-block">
+
+            <div class="col-lg-12">
+                <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                    <!-- SDSLabs -->
+                    <div class="vertical-timeline-block">
+                        <div class="vertical-timeline-icon navy-bg">
+                            <i class="fa fa-plus-square"></i>
+                        </div>
+                        <div class="vertical-timeline-content">
+                            <h2><span data-i18n="career.SDSLabs">SDSLabs</span></h2>
+                            <p><span data-i18n="career.SDSLabs_des">I started learning about development from here only ,I learned a lot and build some cool things.</span></p>
+                            <span class="vertical-date"><span data-i18n="career.SDSLabs_date"> Jan. 2016 </span><br/> <small><span data-i18n="career.SDSLabs_job">Developer</span></small> </span>
+                        </div>
+                    </div>
+                    <!-- PAG -->
+                    <div class="vertical-timeline-block">
+                        <div class="vertical-timeline-icon navy-bg">
+                            <i class="fa fa-gamepad"></i>
+                        </div>
+                        <div class="vertical-timeline-content">
+                            <h2><span data-i18n="career.pag">PAG</span></h2>
+                            <p><span data-i18n="career.pag_des">Programming and Algorithm groups, A group to promote comptetive coding . I started my journey in Programming from here</span></p>
+                            <span class="vertical-date"><span data-i18n="career.pag_date"> Oct. 2015 </span><br/> <small><span data-i18n="career.pag_job">Coder</span></small> </span>
+                        </div>
+                    </div>
+                    <!-- iithbt -->
+                    <div class="vertical-timeline-block">
+                        <div class="vertical-timeline-icon navy-bg">
+                            <i class="fa fa-cloud"></i>
+                        </div>
+                        <div class="vertical-timeline-content">
+                            <h2><span data-i18n="career.iithbt">IITHbt</span></h2>
+                            <p><span data-i18n="career.iithbt_des">At August,I Joined IITR for B.Tech in CSE field, Probably the best decison in my life</span></p>
+                            <span class="vertical-date"><span data-i18n="career.iithbt_date"> Sep. 2015 </span><br/> <small><span data-i18n="career.iithbt_job">Web Dev</span></small> </span>
+                        </div>
+                    </div>
+                    <!-- student -->
+                    <div class="vertical-timeline-block">
+                        <div class="vertical-timeline-icon navy-bg">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="vertical-timeline-content">
+                            <h2><span data-i18n="career.college">Joining</span></h2>
+                            <p><span data-i18n="career.college_des">At August,I Joined IITR for B.Tech in CSE field, Probably the best decison in my life.</span></p>
+                            <span class="vertical-date"><span data-i18n="career.college_date"> Aug. 2015 </span><br/> <small><span data-i18n="career.college_job">Student</span></small> </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="team features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" id="i18_skills">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="skills.my_skills">My Skills</span></h1>
+            </div>
+        </div>
+        <div class="row features-block">
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 features-text wow fadeInLeft">
+              <p>Python</p>
+            </div>
+            <div class="col-lg-7 features-text wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 35%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="35" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">85% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>HTML</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 65%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">65% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>Linux/Shell</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 40%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>NodeJS</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">80% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
+              <p>C++</p>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                <div class="progress progress-bar-default">
+                    <div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
+                        <!-- <span class="sr-only">60% Complete (success)</span> -->
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="project" class="project gray-section features">
+    <div class="container" id="i18_projects">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1><span data-i18n="projects.my_projects">My Projects</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+                <div class="team-member">
+                    <img src="{{ site.project.SigIntChecker.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><a href="{{ site.project.SigIntChecker.url | prepend: 'https://github.com' }}" target="blank" style="color: #1ab394" class="navy">{{ site.project.SigIntChecker.name }}</a></h4>
+                    <p><span data-i18n="projects.SigIntChecker">SigInt Checker checks for accidental sigint signal and ask confirmation for exit</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.SigIntChecker.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.SigIntChecker.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.SigIntChecker.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.SigIntChecker.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.SigIntChecker.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.SigIntChecker.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-6 wow fadeInRight">
+                <div class="team-member">
+                    <img src="{{ site.project.Stroom.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><a href="{{ site.project.Stroom.url | prepend: 'https://github.com' }}" target="blank" style="color: #1ab394" class="navy">{{ site.project.Stroom.name }}</a></h4>
+                    <p><span data-i18n="projects.Stroom">Stroom plays music in sync in all the connected devices, It uses nodejs to connect and can play in multiple rooms. It is still in development</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.Stroom.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.Stroom.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.Stroom.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.Stroom.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.Stroom.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.Stroom.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+                <div class="team-member">
+                    <img src="{{ site.project.Youtoo.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><a href="{{ site.project.Youtoo.url | prepend: 'https://github.com' }}" target="blank" style="color: #1ab394" class="navy">{{ site.project.Youtoo.name }}</a></h4>
+                    <p><span data-i18n="projects.Youtoo">Youtoo takes in the name of the query ,search the youtube for it and then download it,as simple as that.</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.Youtoo.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.Youtoo.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.Youtoo.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.Youtoo.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.Youtoo.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.Youtoo.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-6 wow fadeInRight">
+                <div class="team-member">
+                    <img src="{{ site.project.Yolog.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                    <h4><a href="{{ site.project.Yolog.url | prepend: 'https://github.com' }}" target="blank" style="color: #1ab394" class="navy">{{ site.project.Yolog.name }}</a></h4>
+                    <p><span data-i18n="projects.Yolog">Beautify your git logs !, Tabulated colurfull commit history with shortened hashes</span></p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="github-button" href="{{ site.project.Yolog.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-star"
+                            data-count-href="{{ site.project.Yolog.url | append: '/stargazers' }}"
+                            data-count-api="{{ site.project.Yolog.url | prepend: '/repos' | append: '#stargazers_count' }}"
+                            data-count-aria-label="# stargazers on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Star</a>
+                        </li>
+                        <li>
+                            <a class="github-button" href="{{ site.project.Yolog.url | prepend: 'https://github.com'}}"
+                            data-icon="octicon-fork"
+                            data-count-href="{{ site.project.Yolog.url | append: '/forks' }}"
+                            data-count-api="{{ site.project.Yolog.url | prepend: '/repos' | append: '#forks_count' }}"
+                            data-count-aria-label="# forks on GitHub"
+                            aria-label="Star hydepress/jekyll-install on GitHub">Fork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
+
+<section id="contact" class="navy-section testimonials" style="margin-top: 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn" id="i18_contact">
+                <h2>
+                <span>Contact Me</span>
+                <br></br>
+                <ul class="list-inline social-icon">
+                        <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                    </h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 80
+        });
+        // Page scrolling feature
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+            $("#navbar").collapse('hide');
+        });
+    });
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+    // Activate WOW.js plugin for animation on scrol
+    new WOW().init();
+</script>
+
+<script>
+    $(document).ready(function (){
+        $.i18n.init({
+            resGetPath: 'static/locales/__lng__.json',
+            load: 'unspecific',
+            fallbackLng: false,
+            lng: 'en'
+        }, function (t){
+            $('.i18container').i18n();
+            // $('#i18_title').i18n();
+            $('#i18_navbar').i18n();
+            $('#i18_about_me').i18n();
+            $('#i18_skills').i18n();
+            $('#i18_projects').i18n();
+            $('#i18_career').i18n();
+            $('#i18_blog').i18n();
+            $('#i18_link').i18n();
+        });
+        $('.set_en').on('click', function (){
+            i18n.setLng('en', function(){
+                $('.i18container').i18n();
+                // $('#i18_title').i18n();
+                $('#i18_navbar').i18n();
+                $('#i18_about_me').i18n();
+                $('#i18_skills').i18n();
+                $('#i18_projects').i18n();
+                $('#i18_career').i18n();
+                $('#i18_blog').i18n();
+                $('#i18_link').i18n();
+                // $('.set_en').addClass('active');
+                // $('.set_cn').removeClass('active');
+            });
+        });
+        $('.set_cn').on('click', function (){
+            i18n.setLng('cn', function(){
+                $('.i18container').i18n();
+                // $('#i18_title').i18n();
+                $('#i18_navbar').i18n();
+                $('#i18_about_me').i18n();
+                $('#i18_skills').i18n();
+                $('#i18_projects').i18n();
+                $('#i18_career').i18n();
+                $('#i18_blog').i18n();
+                $('#i18_link').i18n();
+                // $('.set_cn').addClass('active');
+                // $('.set_en').removeClass('active');
+            });
+        });
+    });
+</script>
