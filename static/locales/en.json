@@ -1,6 +1,6 @@
 {
   "website":{
-    "title": "Utsav's blog"
+    "title": "Juhi's blog"
   },
   "nav":{
     "home": "Home",
@@ -12,35 +12,24 @@
   },
   "about_me":{
     "about_me": "About Me",
-    "des": " I am a student at IITR, begin development with python and JS. Life is a continuous learning process, so I spend most of my time learning ,developing and being a Panda ."    
+    "des": "I am a doctor in Guna, doing dentistry. Life is a continuous learning process, so I spend most of my time learning, treating patients and being a cutie pie."    
   },
   "skills":{
     "my_skills": "My Skills"
   },
-  "projects":{
-    "my_projects": "My Projects",
-    "SigIntChecker": "SigInt Checker checks for accidental sigint signal and ask confirmation for exit",
-    "Stroom": "Stroom plays music in sync in all the connected devices, It uses nodejs to connect and can play in multiple rooms. It is still in development",
-    "Youtoo": "Youtoo takes in the name of the query ,search the youtube for it and then download it,as simple as that.",
-    "Yolog": "Beautify your git logs !, Tabulated colurfull commit history with shortened hashes"
-  },
   "career":{
     "my_career": "My Career",
-    "SDSLabs": "SDSLabs",
-    "SDSLabs_des": "I started learning about development from here only ,I learned a lot and build some cool things",
-    "SDSLabs_date": "Jan. 2016",
-    "SDSLabs_job": "Developer",
-    "pag": "PAG",
-    "pag_des": "Programming and Algorithm groups, A group to promote comptetive coding .I started my journey in Programming from here",
-    "pag_date": "Oct. 2015",
-    "pag_job": "Coder",
-    "iithbt": "IITHbt",
-    "iithbt_des": "In IITHbt I joined finance department but later switched to Web development ,By the way IITHbt is a magazine.",
-    "iitthbt_date": "Sep. 2015",
-    "iithbt_job": "Web Dev",
+    "pag": "Kansal Clinic",
+    "pag_des": "Local Clininc in Guna, I joined as a Dental Associate and performed surgeries and extractions",
+    "pag_date": "May. 2018",
+    "pag_job": "Dental Associate",
+    "iithbt": "Indian Dental Association",
+    "iithbt_des": "At August,I Joined Indian Dental Association.",
+    "iitthbt_date": "August. 2016",
+    "iithbt_job": "Member",
     "college": "Joining",
-    "college_des": "On August ,I Joined IITR, Probably the best decison in my life",
-    "college_date": "August. 2015",
+    "college_des": "At June, I Joined Modern Dental College and Research Centre, Indore for BDS",
+    "college_date": "June. 2016",
     "college_job": "Student"
   },
   "contact":{
